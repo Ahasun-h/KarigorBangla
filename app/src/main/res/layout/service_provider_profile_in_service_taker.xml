@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceTaker.Activity.ServiceProviderProfileInServiceTaker"
+    android:background="@color/colorMain">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:paddingTop="60dp"
+            android:paddingBottom="60dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_boder"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_user" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/provider_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:drawablePadding="17dp"
+                android:drawableLeft="@drawable/ic_user"
+                android:text="Provider Name"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/provider_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:text="Provider Address"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/provider_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:text="Provider Distance"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/road"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/provider_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:text="Gender :"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/gendar"
+                android:textColor="@color/colorWhite"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/service_area"
+                android:textColorHint="@android:color/white"
+                android:layout_marginTop="14dp">
+
+                <EditText
+                    android:id="@+id/service_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="@android:color/transparent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your date"
+                android:gravity="left"
+                android:textSize="16dp"
+                android:layout_marginTop="26dp"
+                android:textColor="@color/colorWhite"/>
+
+
+            <TextView
+                android:id="@+id/rent_date_piker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_below="@+id/apartment_no"
+                android:background="@drawable/add_post_edit_tex_bg"
+                android:text="dd/mm/yyyy"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/calender"
+                android:textColor="@color/colorWhite"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your time"
+                android:gravity="left"
+                android:textSize="16dp"
+                android:layout_marginTop="26dp"
+                android:textColor="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                    <EditText
+                        android:id="@+id/hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/borderstroke"
+                        android:maxLength="2"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:hint="@string/hour"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight="0.8"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/colorWhite"/>
+
+
+                    <EditText
+                        android:id="@+id/minute"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:hint="@string/minute"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/borderstroke"/>
+
+
+
+
+                <Spinner
+                    android:id="@+id/day_spiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"
+                    android:textColor="#F5F5F5"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/bg_spinner"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="28dp">
+
+                    <ImageButton
+                        android:id="@+id/call"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/colormain"
+                        android:src="@drawable/call"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/bottonUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/colormain"
+                        android:text="Hire"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/colormain"
+                    android:src="@drawable/black"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="28dp"/>
+
+            </LinearLayout>
+
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="28dp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Karigor</string>
+
+    <string name="map_key" translatable="false">AIzaSyBcPzksYXPPfaKycl0O1EX2J4iH4nVHvaY</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--SignUp-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="or">or</string>
+    <string name="sign_in">SignUp ?</string>
+    <!--SignIn-->
+    <string name="SIngUp_textView">SingUp</string>
+    <string name="UserName">User Name</string>
+    <string name="confirmPassword">confirm password</string>
+    <string name="terms">I agree all terms and conditions</string>
+
+    <!--Category Fragment-->
+    <string name="category">Category</string>
+    <string name="apartment">Apartment</string>
+    <string name="flat">Flat</string>
+    <string name="store">Store</string>
+    <string name="office">Office</string>
+    <string name="garage">Garage</string>
+    <string name="warehouse">Warehouse</string>
+
+    <!--Profile Fragment-->
+    <string name="user_name">Name : User Name</string>
+    <string name="user_email">Email : email@email.com</string>
+    <string name="user_address">Address : Bangladesh</string>
+    <string name="edite_profle">Edite Profile</string>
+
+    <!--Number Authentication Activity-->
+    <string name="emter_number">Enter your mobile number</string>
+    <string name="number_fild">number</string>
+    <string name="number_fild_text">You must be enter your 11 digit phone number.Then tap next to verify your account with your phone number . You don’t need to manualy enter verification code if the number install in this phone. </string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="hour">hh</string>
+    <string name="minute">mm</string>
+
+    <string name="service_area">Service Area</string>
+
+
+    <string-array name="user_type">
+        <item>Select your account type</item>
+        <item>User</item>
+        <item>Provider</item>
+    </string-array>
+
+
+    <string-array name="city">
+        <item>Dhaka</item>
+    </string-array>
+
+
+    <string-array name="area">
+        <item>Uttara</item>
+        <item>Mirpur</item>
+        <item>Bangla Motors</item>
+        <item>Kalabagan</item>
+        <item>Hatirpool</item>
+        <item>Paribagh</item>
+        <item>Kathalbagan</item>
+        <item>Dhanmondi</item>
+        <item>Adabar</item>
+        <item>Azimpur</item>
+        <item>Azampur</item>
+        <item>Badda</item>
+        <item>Bangsal</item>
+        <item>Chowkbazar</item>
+        <item>Hazaribagh</item>
+        <item>Gendaria</item>
+        <item>Gulshan</item>
+        <item>Kadamtali</item>
+        <item>Kamrangirchar</item>
+        <item>Khilgaon</item>
+        <item>Khilkhet</item>
+        <item>Kotwali</item>
+        <item>Lalbagh</item>
+        <item>Kafrul</item>
+        <item>Mohammadpur</item>
+        <item>Pallabi </item>
+        <item>Paltan</item>
+        <item>Panthapath</item>
+        <item>New Market </item>
+        <item>Rampura </item>
+        <item>Ramna</item>
+        <item>Sabujbagh</item>
+        <item>Turag</item>
+        <item>Vatara</item>
+        <item>Uttar Khan</item>
+        <item>Tejgaon </item>
+        <item>Wari</item>
+        <item>Banani</item>
+        <item>Jatrabari</item>
+        <item>Dhaka Cantonment</item>
+        <item>Jigatala</item>
+        <item>Nikunja</item>
+        <item>Kuril</item>
+        <item>Baridhara</item>
+        <item>Mohakhali</item>
+        <item>Motijheel</item>
+        <item>Shutrapur</item>
+        <item>Bosila</item>
+        <item>Shyamoli</item>
+        <item>Kallyanpur</item>
+        <item>Kamalapur</item>
+        <item>Arambagh</item>
+        <item>Nawabpur</item>
+        <item>Tikatuli </item>
+        <item>Gopibag</item>
+        <item>Shamibag</item>
+        <item>Shantibag</item>
+        <item>Malibag</item>
+        <item>Mouchak</item>
+        <item>Mogbazar</item>
+        <item>Palashi</item>
+        <item>Agargaon</item>
+        <item>Paikpara</item>
+        <item>Monipur</item>
+        <item>Pirerbag</item>
+        <item>Gabtoli</item>
+        <item>Faridabad</item>
+        <item>Jurain</item>
+        <item>Rayerbag</item>
+        <item>Rayerbazar</item>
+    </string-array>
+
+
+    <string-array name="time">
+        <item>pm</item>
+        <item>am</item>
+    </string-array>
+
+</resources>

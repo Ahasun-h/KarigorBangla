@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+
+<LinearLayout
+    android:id="@+id/pending_job_offer_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/service_provider_name"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Name"/>
+
+    <TextView
+        android:id="@+id/service_provider_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Address"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/service_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Date"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/service_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Time"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/service_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Area"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/post_time"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.38"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        tools:text="time"/>
+
+</LinearLayout>
+
+</FrameLayout>

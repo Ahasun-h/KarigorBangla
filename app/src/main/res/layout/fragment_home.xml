@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ServiceTaker.Fragment.Home"
+    android:background="@color/colorMain">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="80dp"
+            android:paddingBottom="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/handyman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="6"
+                        android:background="@color/colorBlue"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorMain">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:background="@drawable/aaaa"
+                            android:layout_marginTop="60dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="15dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Handyman"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Start form 500tk "
+                                    android:textStyle="normal"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/maid"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="#009f2b2b" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cleaner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="6"
+                        android:background="#00FFFFFF"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorMain">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:background="@drawable/aaaa"
+                            android:layout_marginTop="60dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="15dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Cleaner"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Start form 500tk "
+                                    android:textStyle="normal"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/cleaner"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="#00ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/vehicle_services"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="6"
+                        android:background="@color/colorBlue"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorMain">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:background="@drawable/aaaa"
+                            android:layout_marginTop="60dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="15dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Vehicle services"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Start form 500tk "
+                                    android:textStyle="normal"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/car_wash"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="#009f2b2b" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/electrecian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="6"
+                        android:background="#00FFFFFF"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorMain">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:background="@drawable/aaaa"
+                            android:layout_marginTop="60dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="15dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Electrician"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Start form 500tk "
+                                    android:textStyle="normal"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/electrecian"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="#00ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/vehicle_services_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="6"
+                        android:background="@color/colorBlue"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorMain">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:background="@drawable/aaaa"
+                            android:layout_marginTop="60dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="15dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Delivery Service"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Start form 500tk "
+                                    android:textStyle="normal"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/delivery"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="#009f2b2b" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mechanics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="6"
+                        android:background="#00FFFFFF"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorMain">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:background="@drawable/aaaa"
+                            android:layout_marginTop="60dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="15dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Mechanic"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Start form 500tk "
+                                    android:textStyle="normal"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/mechanics"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

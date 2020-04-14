@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mdrayefenam.karigorbangla">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ServiceTaker.Activity.InvoiceActivity"></activity>
+        <activity android:name=".ServiceTaker.Activity.ServiceTime" />
+        <activity android:name=".ServiceProvider.Activity.ServiceProviderJobViewActivity" />
+        <activity android:name=".ServiceProvider.Activity.ServiceProviderJobConfirm" />
+        <activity android:name=".ServiceTaker.Activity.Test" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".ServiceTaker.Activity.ServiceProviderProfileInServiceTaker" />
+        <activity android:name=".ServiceTaker.Activity.ProviderRecyllerView" />
+        <activity android:name=".ServiceTaker.Activity.ServiceTakerProfileUpdate" />
+        <activity android:name=".ServiceTaker.Activity.ServiceTakerLocation" />
+        <activity
+            android:name=".ServiceProvider.Activity.ServiceProviderHome"
+            android:logo="@drawable/karigorbanglapng"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ServiceProvider.Activity.ServiceProbiderCatagorySelect" />
+        <activity android:name=".RootActivity.LoginOption" />
+        <activity android:name=".RootActivity.AccountVerified" />
+        <activity android:name=".RootActivity.NotificationView" />
+
+        <activity android:name=".ServiceProvider.Activity.ServiceProviderProfileUpdate" />
+
+        <activity
+            android:name=".RootActivity.NumberAuthenticationCode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RootActivity.NumberAuthentication"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RootActivity.SnapScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RootActivity.SingUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RootActivity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ServiceTaker.Activity.MainActivity"
+            android:logo="@drawable/karigorbanglapng"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

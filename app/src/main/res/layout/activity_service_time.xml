@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceTaker.Activity.ServiceTime"
+    android:orientation="vertical"
+    android:background="@color/colorMain">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+
+
+
+
+        <FrameLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorMain">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_margin_half"
+                app:cardBackgroundColor="@color/colorGray"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="@dimen/poster_thumb_width"
+                    android:layout_height="@dimen/poster_thumb_height"
+                    android:scaleType="fitXY"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@color/colorMain"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_margin"
+                android:paddingEnd="@dimen/activity_margin"
+                android:paddingLeft="@dimen/poster_thumb_width"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingStart="@dimen/poster_thumb_width"
+                android:paddingTop="@dimen/activity_margin_half">
+
+
+                <TextView
+                    android:id="@+id/service_taker_name"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_content"
+                    android:layout_marginStart="@dimen/activity_margin_content"
+                    android:layout_marginTop="@dimen/activity_margin_quarter"
+                    android:maxLines="1"
+                    tools:text="Category"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/service_taker_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_content"
+                    android:layout_marginStart="@dimen/activity_margin_content"
+                    android:layout_marginTop="@dimen/activity_margin_quarter"
+                    android:maxLines="20"
+                    tools:text="Address"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/service_taker_email"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_content"
+                    android:layout_marginStart="@dimen/activity_margin_content"
+                    android:layout_marginTop="@dimen/activity_margin_half"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="Gender"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/service_Date"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_content"
+                    android:layout_marginStart="@dimen/activity_margin_content"
+                    android:layout_marginTop="@dimen/activity_margin_half"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="Gender"
+                    android:textColor="@color/colorBackground"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/service_time"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_content"
+                    android:layout_marginStart="@dimen/activity_margin_content"
+                    android:layout_marginTop="@dimen/activity_margin_half"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="Gender"
+                    android:textColor="@color/colorBackground"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/service_address"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_content"
+                    android:layout_marginStart="@dimen/activity_margin_content"
+                    android:layout_marginTop="@dimen/activity_margin_half"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="Gender"
+                    android:textColor="@color/colorBackground"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:layout_below="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/workfinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btPause"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btnshape"
+                android:text="Work Finish"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

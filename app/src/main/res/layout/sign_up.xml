@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context=".RootActivity.SingUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_boder"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_user" />
+
+                <ImageView
+                    android:id="@+id/btn_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/profile_image"
+                    android:layout_alignTop="@+id/profile_image"
+                    android:background="@drawable/camera_button_bg"
+                    android:padding="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo_camera_black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Name"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="14dp">
+
+                    <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/user"
+                        android:drawablePadding="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/email"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/userEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Address"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/userAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/home"
+                        android:drawablePadding="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:layout_gravity="left"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/RG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right">
+
+                            <RadioButton
+                                android:id="@+id/radio1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:textColor="@color/colorWhite"
+                                android:theme="@style/MyRaidoButton"
+                                android:paddingRight="20dp"
+                                android:buttonTint="@color/colorWhite"/>
+
+                            <RadioButton
+                                android:id="@+id/radio2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:theme="@style/MyRaidoButton"
+                                android:textColor="@color/colorWhite"
+                                android:buttonTint="@color/colorWhite"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/password"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/confirmPassword"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22sp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/check_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:buttonTint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="@string/terms"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="login"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:background="@drawable/login_bt_bg"
+                android:textColor="@color/colorWhite"
+                android:layout_below="@+id/emaiAndPassword"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:layout_centerHorizontal="true" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
